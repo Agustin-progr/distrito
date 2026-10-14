@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111110">
+  <meta name="description" content="DISTRITO Barbería. Cortes precisos, estilo urbano y atención personalizada. Reservá tu próximo turno.">
+  <title>DISTRITO — Barbería</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="brand" aria-label="DISTRITO Barbería">
+        <span class="brand-mark">D.</span>
+        <span class="brand-text">
+          DISTRITO
+          <small>BARBERÍA · EST. 2018</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">La barbería</a>
+        <a href="#turno">Contacto</a>
+      </div>
+
+      <a href="#turno" class="button nav-button">Reservar turno <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> Buenos cortes. Buenas costumbres.</div>
+
+        <h1>Tu estilo.<br>Tu <em>territorio.</em></h1>
+
+        <p class="hero-description">
+          No es solo un corte. Es el ritual, el detalle y la confianza
+          de salir sintiéndote vos mismo. Bienvenido a DISTRITO.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#turno" class="button">
+            Encontrá tu próximo corte <span>↗</span>
+          </a>
+          <a href="#servicios" class="button button-outline">
+            Explorar servicios
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <strong>Precisión en cada corte</strong>
+            <span>Detalle que se nota</span>
+          </div>
+          <div>
+            <strong>Un espacio para vos</strong>
+            <span>Sin apuro, con estilo</span>
+          </div>
+          <div>
+            <strong>Tu próximo ritual</strong>
+            <span>Reservá online</span>
+          </div>
+        </div>
+      </div>
+
+      <span class="hero-index">DISTRITO / BARBER CULTURE / 001</span>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Corte con intención ✳</span>
+        <span>Respeto por el oficio ✳</span>
+        <span>Tu estilo, tus reglas ✳</span>
+        <span>La cultura del detalle ✳</span>
+        <span>Corte con intención ✳</span>
+        <span>Respeto por el oficio ✳</span>
+        <span>Tu estilo, tus reglas ✳</span>
+        <span>La cultura del detalle ✳</span>
+      </div>
+    </div>
+
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">El menú</span>
+            <h2>Hecho a tu medida.</h2>
+          </div>
+          <p>
+            Clásicos bien ejecutados y estilos actuales.
+            Elegí el servicio que va con vos.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-number">01 / CORTE</span>
+              <span class="service-icon">✳</span>
+            </div>
+            <div>
+              <h3>Corte clásico</h3>
+              <p>Tijera, máquina y terminaciones precisas para un look que funciona.</p>
+            </div>
+            <div class="service-bottom">
+              <div>
+                <strong class="price">$12.000</strong>
+                <span class="duration">30–40 min</span>
+              </div>
+              <button class="service-select" type="button" data-service="Corte clásico">ELEGIR ↗</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-number">02 / BARBA</span>
+              <span class="service-icon">✳</span>
+            </div>
+            <div>
+              <h3>Perfilado de barba</h3>
+              <p>Diseño, definición y toalla caliente para cerrar el ritual.</p>
+            </div>
+            <div class="service-bottom">
+              <div>
+                <strong class="price">$8.000</strong>
+                <span class="duration">20–30 min</span>
+              </div>
+              <button class="service-select" type="button" data-service="Perfilado de barba">ELEGIR ↗</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-number">03 / COMBO</span>
+              <span class="service-icon">✳</span>
+            </div>
+            <div>
+              <h3>Corte + barba</h3>
+              <p>El servicio completo para salir con todo en su lugar.</p>
+            </div>
+            <div class="service-bottom">
+              <div>
+                <strong class="price">$17.000</strong>
+                <span class="duration">50–60 min</span>
+              </div>
+              <button class="service-select" type="button" data-service="Corte + barba">ELEGIR ↗</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-number">04 / DETALLE</span>
+              <span class="service-icon">✳</span>
+            </div>
+            <div>
+              <h3>Arreglo express</h3>
+              <p>Contornos y retoques para mantener tu estilo entre cortes.</p>
+            </div>
+            <div class="service-bottom">
+              <div>
+                <strong class="price">$6.000</strong>
+                <span class="duration">15–20 min</span>
+              </div>
+              <button class="service-select" type="button" data-service="Arreglo express">ELEGIR ↗</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="price-note">Precios ilustrativos, sujetos a actualización.</p>
+      </div>
+    </section>
+
+    <section class="manifesto" id="nosotros">
+      <div class="container">
+        <div class="manifesto-panel reveal">
+          <div class="manifesto-image">
+            <img
+              src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85"
+              alt="Barbero trabajando en un corte de cabello"
+              loading="lazy">
+          </div>
+
+          <div class="manifesto-copy">
+            <span class="eyebrow">Más que una barbería</span>
+            <h2>El oficio está en los <span>detalles.</span></h2>
+            <p>
+              Creemos en el valor de hacer las cosas bien. En conocer a cada
+              cliente, cuidar cada terminación y crear un lugar al que siempre
+              tengas ganas de volver.
+            </p>
+            <a href="#turno" class="button button-outline">
+              Vení a conocernos <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="container experience-grid">
+        <div class="experience-item reveal">
+          <strong>01.</strong>
+          <span>Atención personal, sin apuros ni fórmulas.</span>
+        </div>
+        <div class="experience-item reveal">
+          <strong>100%</strong>
+          <span>Compromiso con el detalle y el oficio.</span>
+        </div>
+        <div class="experience-item reveal">
+          <strong>Tu estilo.</strong>
+          <span>Un resultado pensado para vos, no para todos.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="turno">
+      <div class="container booking-grid">
+        <div class="booking-intro reveal">
+          <span class="eyebrow">El próximo paso</span>
+          <h2>Tu lugar<br>te espera.</h2>
+          <p>
+            Contanos qué necesitás y coordinamos tu visita.
+            Completá el formulario y dejá que el resto fluya.
+          </p>
+
+          <div class="contact-line">
+            <span class="contact-icon">⌁</span>
+            <span>Atención con reserva previa</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-icon">◷</span>
+            <span>Martes a sábado · 10:00 a 20:00</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-icon">⌖</span>
+            <span>Tu barrio, tu barbería</span>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="booking-form" novalidate>
+          <div class="form-heading">
+            <div>
+              <h3>Pedí tu turno</h3>
+              <p>Dejanos tus datos y nos ponemos en contacto.</p>
+            </div>
+            <span class="form-mark">D.</span>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Nombre y apellido <span>*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Cómo te llamás" minlength="2" maxlength="80" required>
+              <small class="field-error" id="name-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="phone">WhatsApp / teléfono <span>*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ej. 11 2345 6789" maxlength="25" required>
+              <small class="field-error" id="phone-error"></small>
+            </div>
+
+            <div class="field field-full">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com">
+              <small class="field-error" id="email-error"></small>
+            </div>
+
+            <div class="field field-full">
+              <label for="service">Servicio que te interesa <span>*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Seleccioná un servicio</option>
+                <option value="Corte clásico">Corte clásico</option>
+                <option value="Perfilado de barba">Perfilado de barba</option>
+                <option value="Corte + barba">Corte + barba</option>
+                <option value="Arreglo express">Arreglo express</option>
+                <option value="Quiero asesoramiento">Quiero asesoramiento</option>
+              </select>
+              <small class="field-error" id="service-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="date">Día preferido</label>
+              <input id="date" name="date" type="date">
+              <small class="field-error" id="date-error"></small>
+            </div>
+
+            <div class="field">
+              <label for="time">Horario preferido</label>
+              <select id="time" name="time">
+                <option value="">A convenir</option>
+                <option>10:00–12:00</option>
+                <option>12:00–14:00</option>
+                <option>14:00–16:00</option>
+                <option>16:00–18:00</option>
+                <option>18:00–20:00</option>
+              </select>
+            </div>
+
+            <div class="field field-full">
+              <label for="message">¿Algo que debamos saber?</label>
+              <textarea id="message" name="message" maxlength="500" placeholder="Contanos qué estilo tenés en mente (opcional)"></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <p class="form-note">
+              Los campos con * son obligatorios. Esta demo no envía datos a un servidor.
+            </p>
+            <button class="button submit-button" id="submit-button" type="submit">
+              <span class="spinner" aria-hidden="true"></span>
+              <span class="submit-label">Enviar consulta</span>
+              <span class="submit-arrow">↗</span>
+            </button>
+          </div>
+
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand" aria-label="Volver al inicio">
+        <span class="brand-mark">D.</span>
+        <span class="brand-text">DISTRITO<small>BARBERÍA</small></span>
+      </a>
+
+      <span class="footer-copy">
+        © <span id="year"></span> DISTRITO Barbería. El estilo es personal.
+      </span>
+
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#turno">Contacto</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
